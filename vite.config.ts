@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import solid from 'vite-plugin-solid'
@@ -13,5 +15,11 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, './src')
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    isolate: false,
+    setupFiles: ['./vitest-setup.ts']
   }
 })
