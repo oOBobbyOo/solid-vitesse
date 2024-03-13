@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from '@solidjs/router'
+import Counter from '@/components/Counter'
 
 const Hi = () => {
   const params = useParams()
@@ -12,6 +13,9 @@ const Hi = () => {
         Hi,
       </h3>
       <div text-xl>{params.id}!</div>
+
+      <Counter />
+
       <div>
         <button m-3 text-sm btn onClick={goBack}>
           Back
