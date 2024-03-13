@@ -1,19 +1,13 @@
+import Logos from '@/components/Logos'
+import InputEntry from '@/components/InputEntry'
+
 const Index = () => {
   return (
-    <>
-      <div text-4xl>
-        <div i-carbon-campsite inline-block />
-      </div>
-      <p>
-        <a
-          rel='noreferrer'
-          href='https://github.com/oOBobbyOo/solid-vitesse'
-          target='_blank'
-        >
-          Vitesse
-        </a>
-      </p>
-    </>
+    <div>
+      <Logos />
+
+      <InputEntry />
+    </div>
   )
 }
 

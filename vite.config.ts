@@ -7,19 +7,19 @@ import solid from 'vite-plugin-solid'
 import devtools from 'solid-devtools/vite'
 
 // @see https://unocss.dev/integrations/vite
-import UnoCSS from 'unocss/vite'
+import unocss from 'unocss/vite'
 
 export default defineConfig({
-  plugins: [devtools(), solid(), UnoCSS()],
+  plugins: [devtools(), unocss(), solid()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
+      "@": resolve(__dirname, "./src"),
+    },
   },
   test: {
     globals: true,
-    environment: 'jsdom',
+    environment: "jsdom",
     isolate: false,
-    setupFiles: ['./vitest-setup.ts']
-  }
-})
+    setupFiles: ["./vitest-setup.ts"],
+  },
+});
