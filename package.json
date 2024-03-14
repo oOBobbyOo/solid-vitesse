@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
     "lint:prettier": "prettier --config .prettierrc --write \"./src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
