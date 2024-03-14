@@ -13,6 +13,9 @@ const Hi = () => {
         Hi,
       </h3>
       <div text-xl>{params.id}!</div>
+      <div my-2 text-sm italic op75>
+        <em>Demo of dynamic route</em>
+      </div>
 
       <Counter />
 
