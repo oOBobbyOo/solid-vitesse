@@ -13,6 +13,8 @@
     "lint:prettier": "prettier --config .prettierrc --write \"./src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@solid-primitives/media": "^2.2.8",
+    "@solid-primitives/storage": "^2.1.4",
     "@solidjs/router": "^0.13.0",
     "@unocss/reset": "^0.58.5",
     "solid-js": "^1.8.15"

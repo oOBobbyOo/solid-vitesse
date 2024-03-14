@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@solid-primitives/media':
+    specifier: ^2.2.8
+    version: 2.2.8(solid-js@1.8.15)
+  '@solid-primitives/storage':
+    specifier: ^2.1.4
+    version: 2.1.4(solid-js@1.8.15)
   '@solidjs/router':
     specifier: ^0.13.0
     version: 0.13.0(solid-js@1.8.15)
@@ -1072,7 +1078,6 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.15)
       solid-js: 1.8.15
-    dev: true
 
   /@solid-primitives/keyboard@1.2.8(solid-js@1.8.15):
     resolution: {integrity: sha512-pJtcbkjozS6L1xvTht9rPpyPpX55nAkfBzbFWdf3y0Suwh6qClTibvvObzKOf7uzQ+8aZRDH4LsoGmbTKXtJjQ==}
@@ -1095,7 +1100,6 @@ packages:
       '@solid-primitives/static-store': 0.0.8(solid-js@1.8.15)
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.15)
       solid-js: 1.8.15
-    dev: true
 
   /@solid-primitives/platform@0.1.2(solid-js@1.8.15):
     resolution: {integrity: sha512-sSxcZfuUrtxcwV0vdjmGnZQcflACzMfLriVeIIWXKp8hzaS3Or3tO6EFQkTd3L8T5dTq+kTtLvPscXIpL0Wzdg==}
@@ -1133,7 +1137,6 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.15)
       solid-js: 1.8.15
-    dev: true
 
   /@solid-primitives/scheduled@1.4.3(solid-js@1.8.15):
     resolution: {integrity: sha512-HfWN5w7b7FEc6VPLBKnnE302h90jsLMuR28Fcf7neRGGf8jBj6wm6/UFQ00VlKexHFMR6KQ2u4VBh5a1ZcqM8g==}
@@ -1159,7 +1162,19 @@ packages:
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.8.15)
       solid-js: 1.8.15
-    dev: true
+
+  /@solid-primitives/storage@2.1.4(solid-js@1.8.15):
+    resolution: {integrity: sha512-ziGRMSPi2PDnY6L6YPGWYnzmUEPIwO0PaDT9N1WNW9P2tUMMhgqKLXBrYfjytpjwY3UM6kIrbONMRADjyGtzAw==}
+    peerDependencies:
+      solid-js: ^1.6.12
+      solid-start: '>=0.2.26'
+    peerDependenciesMeta:
+      solid-start:
+        optional: true
+    dependencies:
+      '@solid-primitives/utils': 6.2.3(solid-js@1.8.15)
+      solid-js: 1.8.15
+    dev: false
 
   /@solid-primitives/styles@0.0.111(solid-js@1.8.15):
     resolution: {integrity: sha512-1mBxOGAPXmfD5oYCvqjKBDN7SuNjz2qz7RdH7KtsuNLQh6lpuSKadtHnLvru0Y8Vz1InqTJisBIy/6P5kyDmPw==}
@@ -1177,7 +1192,6 @@ packages:
       solid-js: ^1.6.12
     dependencies:
       solid-js: 1.8.15
-    dev: true
 
   /@solidjs/router@0.13.0(solid-js@1.8.15):
     resolution: {integrity: sha512-YHLbFv9J53+iG4yVrh0vVdYiyXPTk892UyZ1jiMPsUXn2dYkX4552N+8SjvlKWWsmNmYxaoefM6jZn1YtVIUUg==}
