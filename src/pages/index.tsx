@@ -6,6 +6,11 @@ const Index = () => {
     <div>
       <Logos />
 
+      <p>Solid Vitesse</p>
+      <p text-sm italic op75>
+        Opinionated Solid Vite Starter Template
+      </p>
+
       <InputEntry />
     </div>
   )
